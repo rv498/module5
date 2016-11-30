@@ -122,7 +122,7 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...
                 // of how to do that.
                 // ....
 
-                insertHtml("#content", categoriesViewHtml);
+                insertHtml("#collapsable-nav", categoryHtml);
             },
             false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
     }
