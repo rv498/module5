@@ -82,7 +82,7 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...
         // On first load, show home view
         showLoading("#main-content");
         $ajaxUtils.sendGetRequest(
-            allCategoriesUrl, buildAndShowHomeHTML, // ***** <---- TODO: STEP 1: Substitute [...] ******
+            allCategoriesUrl, buildAndShowCategoriesHTML, // ***** <---- TODO: STEP 1: Substitute [...] ******
             true); // Explicitely setting the flag to get JSON from server processed into an object literal
     });
     // *** finish **
@@ -122,7 +122,7 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...
                 // of how to do that.
                 // ....
 
-                insertHtml("#collapsable-nav", categoryHtml);
+                insertHtml("#container", categoryHtml);
             },
             false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
     }
